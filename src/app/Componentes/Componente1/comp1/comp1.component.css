@@ -1,21 +1,19 @@
-
-body{
-    background:linear-gradient(to bottom, rgb(0, 255, 157), rgb(0, 0, 0));
+.div1{
     height: 100vh;
     font-family: 'Montserrat',sans-serif ;
+    display:flex;
 }
 .container{
+    display:flex;
     position: absolute;
-    transform: translate(100%,-50%);
+    transform: translate(110%,-50%);
     top: 50%;
     left: 50%;
-    height: auto;
 }
 form{
     background: rgb(0, 0, 0);
     padding:3em;
-    height:100hv;
-    border-radius:20px;
+    height:570px;
     border-left:1px solid rgb(0, 0, 0);
     border-top:1px solid rgb(0, 0, 0);
     box-shadow:20px 20px 40px -6px rgba(0,0,0,0.2);

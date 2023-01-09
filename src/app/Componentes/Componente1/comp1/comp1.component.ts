@@ -9,20 +9,27 @@ import { Route , Router } from '@angular/router';
 })
 export class Comp1Component{
   constructor(private nav:Router) { }
-  ngOnInit(): void {
-    localStorage.clear();
-  }
-  userFound = false;
   nombre:any;
-  searchUser() {
-    if(this.nombre=="Alex Faican"){
-      this.userFound = true;
-      console.log("bien");
-    }else{
-      console.log("mal");
-      this.userFound = false;
-    }
-  }
   almacenamiento(){
     localStorage.setItem('nombre',this.nombre.toString())
-}}
+  }
+  search(){
+    this.almacenamiento();
+    if(this.nombre== "Alex Faican"){
+      this.Pagina3();
+      console.log("xd");
+    }else{
+      this.Pagina2();
+      console.log("zz");
+    }
+  }
+  Pagina3(){
+    this.nav.navigate(['web2'])
+  }
+  Pagina2(){
+    this.nav.navigate(['web1'])
+  }
+  }
+ 
+  
+

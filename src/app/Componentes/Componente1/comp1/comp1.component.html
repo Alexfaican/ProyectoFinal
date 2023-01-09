@@ -1,11 +1,13 @@
 <link rel="preconnect"href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
-<body></body>
+<div class="div1"></div>
 <div class="container">
     <form>
         <h1 class="h11">LOGIN</h1>
         <input class="input1" type="text" [(ngModel)]="nombre" placeholder="Username"><br>
         <input class="input1" type="password" placeholder="Password"><br>
         <a class="a1" href="#">Forgot Password?</a><br>
-        <button class="button1"(click)="searchUser()">Sign in</button><br>
+        <button class="button1" type="submit" (click)="search()">Sign in</button><br>
        </form>
+
+       
