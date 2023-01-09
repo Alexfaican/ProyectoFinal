@@ -18,5 +18,8 @@ export class Comp3Component {
   Pagina4(){
     this.nav.navigate(['web3'])
   }
+  Atras(){
+    this.nav.navigate([''])
+  }
 }
 
