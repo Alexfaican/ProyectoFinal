@@ -1,0 +1,55 @@
+.div1{
+    height: var(--hh);
+    background: rgb(0, 255, 157);
+    color: rgb(0, 0, 0);
+    padding: 0 var(--space);
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+    transition: background .125s ease-in-out;
+    left: 0;
+    width: 100%;
+}
+.div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    position: relative;
+    width: 15 px;
+    height: 15 px;
+    border-radius: 12px;
+    padding: 5px;
+    transition-duration: 500ms;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 5px;
+    background-position: 45% 50%;
+}
+.search:hover{
+    border: 1px solid black;
+}
+.search:focus{
+    width: 200px;
+    cursor: text;
+    padding-left: 40px;
+    color: white;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid black;
+    background-size: 22px;
+    background-position: 10px 50%;
+}
+.img2::before{
+    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.137) ,white);
+}
