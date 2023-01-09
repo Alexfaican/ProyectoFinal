@@ -1,22 +1,16 @@
-.div1{
-    height: var(--hh);
-    background: rgb(0, 255, 157);
-    color: rgb(0, 0, 0);
-    padding: 0 var(--space);
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 9999;
-    transition: background .125s ease-in-out;
-    left: 0;
-    width: 100%;
-}
 .div2{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align:center;
+    background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20220523/pngtree-koi-fish-pattern-carp-pond-image_1395617.jpg);
+    height: 500px;
+}
+.div3{
+    margin:0px auto;
+}
+.header1{
+    width: 100%;
 }
 .search{
     position: relative;
@@ -50,6 +44,5 @@
     background-size: 22px;
     background-position: 10px 50%;
 }
-.img2::before{
-    background:linear-gradient(to bottom, rgba(0, 0, 0, 0.137) ,white);
-}
+
+  

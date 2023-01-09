@@ -27,7 +27,7 @@ form{
 }
 .input1{
     border-radius:20px;
-    margin: 5px;
+    margin: 7px;
     border:2px solid rgb(0, 255, 157);
     text-align:center;
     background: black;
@@ -73,4 +73,8 @@ animation: glowing 20s linear infinite;
     100%{
         background-position: 0 0;
     }
-} 
+}
+.img1{
+    margin-left: 30px;
+    margin-right: 50px;
+}
