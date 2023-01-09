@@ -9,11 +9,15 @@ import { Router } from '@angular/router';
 export class Comp3Component {
   constructor(private nav:Router) { }
   nombre: any;
+  email:any;
+  celular:any;
   ngOnInit(): void {
     this.recuperar()
   }
   recuperar(){
     this.nombre = localStorage.getItem ('nombre');
+    this.email = localStorage.getItem ('email');
+    this.celular = localStorage.getItem ('celular');
   }
   Pagina4(){
     this.nav.navigate(['web3'])
