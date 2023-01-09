@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,4 +8,15 @@ import { Router } from '@angular/router';
 })
 export class Comp3Component {
   constructor(private nav:Router) { }
+  nombre: any;
+  ngOnInit(): void {
+    this.recuperar()
+  }
+  recuperar(){
+    this.nombre = localStorage.getItem ('nombre');
+  }
+  Pagina4(){
+    this.nav.navigate(['web3'])
+  }
 }
+
