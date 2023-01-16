@@ -7,5 +7,7 @@ import { Router } from '@angular/router';
 })
 export class Comp2Component {
   constructor(private nav:Router) { }
-
+  Atras(){
+    this.nav.navigate([''])
+  }
 }
